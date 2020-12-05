@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>DTS.</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section class="header">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 header__logo header-1">
+            <img class="header__img" src="/devchallenges.png" alt="#" />
+            <span>DTS.</span>
+          </div>
+          <div class="col-lg-7 col-md-8 header-title header-2">
+            <h1>Overview</h1>
+            <div class="time">
+              <h3>25 August, 2020</h3>
+              <div class="icon-secondary text-center">
+                <i class="fa fa-calendar"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-1 header-title header-3">
+            <div class="icon-secondary text-center">
+              <i class="fa fa-sign-out"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /* -------------------------CONTENT------------------------ */ -->
+      <!-- /* --------NAV--------- */ -->
+      <section class="content">
+        <div class="row">
+          <div class="col-lg-2 content-nav col-md-4">
+            <div
+              class="nav flex-column nav-pills nav-bar"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link active nav-dashboard nav-all d-flex"
+                id="v-pills-home-tab"
+                data-toggle="pill"
+                href="#v-pills-home"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                <div class="row col-lg-12">
+                  <div class="col-4 nav-icon">
+                    <div class="icon-primary">
+                      <i class="fas fa-columns"></i>
+                    </div>
+                  </div>
+                  <div class="col-8 nav-title">
+                    <h3 class="mb-0">Dashboard</h3>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="nav-link nav-all d-flex"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <div class="row col-12">
+                  <div class="col-4 nav-icon">
+                    <div class="icon-primary">
+                      <i class="fas fa-user-circle"></i>
+                    </div>
+                  </div>
+                  <div class="col-8 nav-title">
+                    <h3>Accounts</h3>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="nav-link nav-all d-flex"
+                id="v-pills-messages-tab"
+                data-toggle="pill"
+                href="#v-pills-messages"
+                role="tab"
+                aria-controls="v-pills-messages"
+                aria-selected="false"
+              >
+                <div class="row col-12">
+                  <div class="col-4 nav-icon">
+                    <div class="icon-primary">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                  </div>
+                  <div class="col-8 nav-title">
+                    <h3>Transactions</h3>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="nav-link nav-all d-flex"
+                id="v-pills-settings-tab"
+                data-toggle="pill"
+                href="#v-pills-settings"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+              >
+                <div class="row col-12">
+                  <div class="col-4 nav-icon">
+                    <div class="icon-primary">
+                      <i class="fas fa-shield-alt"></i>
+                    </div>
+                  </div>
+                  <div class="col-8 nav-title">
+                    <h3>Secure</h3>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="nav-link nav-all d-flex"
+                id="v-pills-settings-tab"
+                data-toggle="pill"
+                href="#v-pills-settings"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+              >
+                <div class="row col-12">
+                  <div class="col-4 nav-icon">
+                    <div class="icon-primary">
+                      <i class="fas fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="col-8 nav-title">
+                    <h3>Settings</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="note-nav h-100 mx-auto">
+              <h4>Banking.</h4>
+              <p>&#169; 2020 Stog<br />All rights reserved</p>
+            </div>
+          </div>
+          <!-- /* --------CONTENT--------- */ -->
+          <div class="col-lg-7 col-md-8 content-mean">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+              >
+                <div class="nav-show position-relative nav-1">
+                  <div class="nav-show-tittle">
+                    <h2>Personal Banking</h2>
+                    <div class="card-icon">
+                      <i class="fas fa-plus"></i>
+                      <h3 class="mb-0">Card</h3>
+                    </div>
+                  </div>
+
+                  <div class="row col-12 px-0 mx-0">
+                    <div class="col-6 px-0">
+                      <ul
+                        class="nav mb-3 nav-show--header"
+                        id="pills-tab"
+                        role="tablist"
+                      >
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link active"
+                            id="pills-home-tab"
+                            data-toggle="pill"
+                            href="#pills-home"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                            >Reports</a
+                          >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="pills-profile-tab"
+                            data-toggle="pill"
+                            href="#pills-profile"
+                            role="tab"
+                            aria-controls="pills-profile"
+                            aria-selected="false"
+                            >Activity</a
+                          >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="pills-contact-tab"
+                            data-toggle="pill"
+                            href="#pills-contact"
+                            role="tab"
+                            aria-controls="pills-contact"
+                            aria-selected="false"
+                            >Bills</a
+                          >
+                        </li>
+                      </ul>
+
+                      <div class="tab-content" id="pills-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="pills-home"
+                          role="tabpanel"
+                          aria-labelledby="pills-home-tab"
+                        >
+                          <div class="debit-card">
+                            <div class="row col-12 px-0 mx-0 h-100">
+                              <div class="col-6 px-0 h-100">
+                                <div class="debit-card--1">
+                                  <h4>Debit Card</h4>
+                                  <div class="account-number">
+                                    <span> 13801.23 </span>
+                                    <p>3789 **** **** 3930</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6 px-0 position-relative">
+                                <div class="debit-card--2 convert d-flex w-100">
+                                  <i class="fas fa-chevron-left"></i>
+                                  <h5>Convert</h5>
+                                  <div class="convert-icon--repeat">
+                                    <i class="fas fa-redo"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-profile"
+                          role="tabpanel"
+                          aria-labelledby="pills-profile-tab"
+                        >
+                          ...
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-contact"
+                          role="tabpanel"
+                          aria-labelledby="pills-contact-tab"
+                        >
+                          ...
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex px-0">saadsdsad</div>
+                  </div>
+                </div>
+                <div class="row px-0 col-12 mx-0 nav-2">
+                  <div class="col-5 px-0 mx-0">
+                    <h2>Weekly Statistics</h2>
+                    <div class="row prore progress-icon">
+                      <div class="col-9 col-progress">
+                        <div class="progress-custom">
+                          <div class="progress-bar--tittle">
+                            <h4>Taxi</h4>
+                            <h5>68%</h5>
+                          </div>
+                          <div class="progress px-0">
+                            <div
+                              class="progress-bar progress-bar-striped progress-bar--1"
+                              role="progressbar"
+                              style="width: 68%"
+                              aria-valuenow="10"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="col-progress--icon col-progress--icon-1">
+                          <i class="fas fa-car"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row progress-icon">
+                      <div class="col-9 col-progress">
+                        <div class="progress-custom">
+                          <div class="progress-bar--tittle">
+                            <h4>Games</h4>
+                            <h5>44%</h5>
+                          </div>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-striped progress-bar--2"
+                              role="progressbar"
+                              style="width: 44%"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="col-progress--icon col-progress--icon-2">
+                          <i class="fas fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row progress-icon">
+                      <div class="col-9 col-progress">
+                        <div class="progress-custom">
+                          <div class="progress-bar--tittle">
+                            <h4>Study</h4>
+                            <h5>79%</h5>
+                          </div>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar--3"
+                              role="progressbar"
+                              style="width: 79%"
+                              aria-valuenow="50"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="col-progress--icon col-progress--icon-3">
+                          <i class="fas fa-graduation-cap"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7">aasadasdad</div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-messages"
+                role="tabpanel"
+                aria-labelledby="v-pills-messages-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-settings"
+                role="tabpanel"
+                aria-labelledby="v-pills-settings-tab"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+          <!-- /* -------------------------CONTENT------------------------ */ -->
+          <div class="col-lg-3 col-md-12 content-infor">
+            <div class="information d-flex text-center">
+              <div class="infor-img">
+                <img
+                  src="/profilePhoto.png"
+                  alt="avatar"
+                  class="rounded-circle"
+                />
+              </div>
+              <div class="infor-name">
+                <h2>John Gnabry</h2>
+              </div>
+            </div>
+            <div class="infor-expense">
+              <div class="infor-expense-icon icon-primary">
+                <i class="fas fa-money-check-alt"></i>
+                <i class="fas fa-shopping-bag ml-3"></i>
+                <i class="fas fa-car-side ml-3"></i>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar--1"
+                  role="progressbar"
+                  style="width: 33%"
+                  aria-valuenow="15"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+
+                <div
+                  class="progress-bar progress-bar--2"
+                  role="progressbar"
+                  style="width: 35%"
+                  aria-valuenow="30"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="cover">
+                    <i class="fas fa-angle-left"></i> &nbsp;
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <div
+                  class="progress-bar progress-bar--3"
+                  role="progressbar"
+                  style="width: 32%"
+                  aria-valuenow="30"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="cover">
+                    <i class="fas fa-angle-left"></i> &nbsp;
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-card">
+              <div class="row">
+                <div class="main-card--1 col-10">
+                  <div class="card-cover"></div>
+                  <div class="main-card--infor">
+                    <h4>Main Card</h4>
+                    <h5>*** 3930</h5>
+                  </div>
+                </div>
+                <div class="main-card--2 col-2">
+                  <div class="icon-secondary">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="challange">
+              <div class="row challange-1">
+                <div class="col-2 challange-icon">
+                  <div class="col-progress--icon col-progress--icon-3">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                </div>
+                <div class="col-8 challange-content">
+                  <h4>Flight</h4>
+                  <h5>Send 4 transfers to the card</h5>
+                </div>
+                <div class="col-2 challange-note">
+                  <div class="challange-note--around col-progress--icon">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row challange-2">
+                <div class="col-2 challange-icon">
+                  <div class="col-progress--icon col-progress--icon-3">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div>
+                </div>
+                <div class="col-8 challange-content">
+                  <h4>Flight</h4>
+                  <h5>Send 4 transfers to the card</h5>
+                </div>
+                <div class="col-2 challange-note">
+                  <div class="challange-note--around col-progress--icon">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row challange-3">
+                <div class="col-2 challange-icon">
+                  <div class="col-progress--icon col-progress--icon-3">
+                    <i class="fas fa-car-side"></i>
+                  </div>
+                </div>
+                <div class="col-8 challange-content">
+                  <h4>Flight</h4>
+                  <h5>Send 4 transfers to the card</h5>
+                </div>
+                <div class="col-2 challange-note">
+                  <div class="challange-note--around col-progress--icon">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- --------------javarscript------------------ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

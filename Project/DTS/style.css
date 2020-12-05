@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #382d43;
+}
+.container {
+  max-width: 102.1rem;
+  margin: 0 auto;
+  padding: 4.1rem 0 5.8rem 0;
+  min-height: 100vh;
+}
+/* ------------------------------------------------------- */
+.content-row {
+  display: flex;
+  flex-direction: row;
+}
+.container-fluid {
+  padding: 8rem 6rem;
+}
+@media only screen and (max-width: 62em) {
+.container-fluid {
+  padding: 4rem 4rem;
+}
+}
+
+
+span {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.icon-primary {
+  font-size: 2.4rem;
+  color: #c7c8d2;
+  padding: 0;
+  margin: 0;
+}
+.icon-primary i {
+  padding: 0;
+  margin: 0;
+}
+
+.icon-secondary {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #3e3b50;
+  box-shadow: 0 0.2rem 2rem #e6e8fa;
+  border: none;
+  font-size: 2.4rem;
+}
+.icon-secondary i {
+  margin-left: 0.25rem;
+}
+
+/* -------------------------HEADER------------------------ */
+/* --------HEADER-LOGO--------- */
+.header {
+  margin-bottom: 5rem;
+}
+
+.header .header__logo {
+  display: flex;
+  flex-direction: row;   
+  align-items: center;
+  
+  width: 85%;
+}
+@media only screen and (max-width: 62em) {
+.header .header__logo{
+  padding: 0;
+  margin-bottom: 2rem;
+}
+}
+
+.header__img {
+  margin-right: 3rem;
+  height: 8rem;
+}
+
+/* --------HEADER-TITLE--------- */
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+}
+@media only screen and (max-width: 62em) {
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0
+  
+}
+}
+
+.header-title h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+
+.header-title .time {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #c3c4cf;
+  letter-spacing: 0.15rem;
+  align-items: center;
+}
+@media only screen and (max-width: 62em) {
+.header-title .time {
+padding-left: 3rem;
+  
+}
+}
+
+.header-title .time .icon-secondary {
+  margin-left: 2rem;
+}
+
+.header .header-3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+/* -------------------------CONTENT------------------------ */
+
+/* --------NAV--------- */
+@media only screen and (max-width: 62em) {
+.content-nav {
+  padding-left: 0;
+}
+}
+
+.content .nav-bar {
+  margin-top: 8rem;
+}
+@media only screen and (max-width: 62em) {
+.content .nav-bar {
+  margin-top: 0rem;
+  }
+
+}
+.content .nav-all {
+  align-items: center;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  color: #c3c4cf;
+  padding: 1.5rem 1rem;
+  transition: all 0.2s;
+  width: 85%;
+}
+.content .nav-all:hover {
+  color: #3e3b50;
+}
+.content .nav-all:hover i {
+  color: #6578eb;
+}
+
+.content .nav-all .nav-icon {
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.content .nav-all .nav-icon i {
+  transition: all 0.2s;
+}
+
+.content .nav-all .nav-title {
+  display: flex;
+  align-items: center;
+
+  padding-left: 1rem;
+}
+.content .nav-title h3 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.content .nav-dashboard {
+  background-color: #f4f5fe !important;
+  color: #3e3b50 !important;
+  font-size: 2rem;
+}
+.content .nav-dashboard i {
+  color: #6578eb;
+}
+.content .nav-dashboard h3 {
+  font-size: 2rem;
+}
+/* ----note-nav---- */
+.note-nav {
+  color: #c3c4cf;
+}
+.note-nav h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.note-nav h5 {
+  font-size: 1.4rem;
+  font-weight: bold;s
+  letter-spacing: 0.1rem;
+}
+/* --------CONTENT--------- */
+.content-mean {
+  padding-left: 6rem;
+  padding-right: 4rem;
+ 
+}
+@media only screen and (max-width: 62em) {
+.content-mean {
+  padding:0;
+ 
+}
+}
+
+
+/* ---------NAV-1------ */
+
+.content .nav-show {
+  padding: 5.5rem 5rem;
+  background-color: #f4f5fe;
+  border-radius: 4.5rem;
+  height: 54rem;
+}
+.nav-show-tittle {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+.nav-show-tittle .card-icon {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.2rem 2.5rem;
+  margin-top: 2rem;
+  box-shadow: 0.5rem 1rem 1rem #e6e8fa;
+  transition: all 0.2s;
+}
+.nav-show-tittle .card-icon:hover {
+  background-color: #6578eb;
+  color: #fff;
+}
+.nav-show-tittle .card-icon h3 {
+  margin-left: 1.5rem;
+}
+
+.nav-show-tittle .card-icon--plus i {
+  margin-right: 1.5rem;
+  font-size: 1.4rem;
+}
+.nav-show-tittle .card-icon--plus h3 {
+  font-size: 1.8rem;
+}
+.content-mean h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+.nav-show .nav-show--header li {
+  background-color: none;
+  transition: all 0.1s;
+}
+.nav-show .nav-show--header li:hover a {
+  border-bottom: 0.3rem solid #f4f5fe;
+  color: #3e3b50;
+  font-weight: 600;
+}
+.nav-show .nav-show--header li:not(:last-child) {
+  margin-right: 5rem;
+}
+.nav-show .nav-show--header a {
+  color: #c3c4cf;
+  padding: 0;
+  font-size: 1.8rem;
+  transition: all 0.1s;
+}
+/* ----DEBIT-CARD----- */
+.debit-card {
+  background-color: #6578eb;
+  box-shadow: -0.5rem 1rem 1rem #e6e8fa;
+  border-radius: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3rem 0rem;
+  padding-left: 4rem;
+  padding-right: 2.5rem;
+  color: #fff;
+  height: 29rem;
+  width: 50rem;
+  position: absolute;
+  transform: translate(-20%, 21%);
+}
+/* --debit-card--1-- */
+.debit-card .debit-card--1 {
+  display: flex;
+  height: 100%;
+
+  flex-direction: column;
+}
+.debit-card .debit-card--1 h4 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+.debit-card--1 .account-number {
+  margin-top: auto;
+}
+.debit-card--1 .account-number span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+.debit-card--1 .account-number span:before {
+  content: '\f155';
+  font-family: fontAwesome;
+  font-weight: 300;
+}
+.debit-card--1 .account-number p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: #c3c4cf;
+}
+/* --debit-card--2-- */
+.debit-card--2 {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  background-color: #fff;
+  color: #3e3b50;
+  border-radius: 1.5rem;
+  position: absolute;
+  transform: rotate(-90deg) translate(-8rem, 6rem);
+}
+
+.debit-card--2 h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+.debit-card--2 .convert-icon--repeat {
+  padding: 1.5rem 2rem;
+  background-color: #f4f5fe;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.debit-card--2 .convert-icon--repeat i {
+  font-size: 1.6rem;
+  color: #c3c4cf;
+}
+/* ---------NAV-2------ */
+.nav-2 {
+  margin-top: 8rem;
+}
+.progress-icon {
+  margin-bottom: 5rem;
+}
+
+.nav-2 .progress-custom:first-child {
+  margin-top: 5rem;
+}
+
+.nav-2 .progress {
+  background-color: #f4f5fe;
+
+  border-radius: 0.6rem;
+}
+.nav-2 .progress .progress-bar {
+  border-radius: 0.6rem;
+}
+.nav-2 .progress .progress-bar--1 {
+  background-color: #fc5346;
+}
+.nav-2 .progress .progress-bar--2 {
+  background-color: #fed234;
+}
+.nav-2 .progress .progress-bar--3 {
+  background-color: #6578eb;
+}
+.progress-bar--tittle {
+  width: 90%;
+  position: absolute;
+  transform: translate(0%, -180%);
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar--tittle h4 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.progress-bar--tittle h5 {
+  margin: 0 !important;
+  padding: 0;
+  font-size: 1.6rem;
+  color: #c3c4cf;
+  font-family: 'Rubik', sans-serif;
+}
+/* ----progress-icon---- */
+.col-progress--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff6f6;
+  border-radius: 30%;
+  margin-top: 2rem;
+height: 5.5rem;
+width: 5.5rem;
+
+
+}
+.col-progress--icon-2 {
+  background-color: #fffaeb;
+}
+.col-progress--icon-3 {
+  background-color: #f4f5fe;
+}
+.col-progress--icon i {
+  font-size: 2.4rem;
+  color: #fc5346;
+}
+.col-progress--icon-2 i {
+  color: #fed234;
+}
+.col-progress--icon-3 i {
+  color: #6578eb;
+}
+
+/* -------------------------CONTENT-INFOR------------------------ */
+/* .content-infor{
+  padding-left: 4rem;
+} */
+.content-infor .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-infor .infor-img {
+  width: 35%;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+.content-infor .infor-img img {
+  width: 110%;
+  border-radius: 50%;
+  border: 0.2rem solid #6578eb;
+  padding: 0.5rem 0.5rem;
+}
+.content-infor .infor-name h2 {
+  font-size: 2.8rem;
+}
+/* -----infor-expense--- */
+.content-infor .infor-expense {
+  height: 0.75rem;
+  margin-top: 5rem;
+}
+.infor-expense-icon {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.infor-expense-icon i {
+  font-size: 2.4rem;
+  color: #c3c4cf;
+  margin-left: 3rem;
+}
+/* -----progress----- */
+.content-infor .progress {
+  height: 0.5rem;
+}
+.content-infor .progress-bar {
+  background-color: #fc5346;
+}
+.content-infor .progress-bar--2 {
+  background-color: #fed234;
+}
+.content-infor .progress-bar--3 {
+  background-color: #45d7ad;
+}
+
+.progress .cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem;
+  color: #000;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 0.2rem 2rem #e6e8fa;
+}
+.progress .cover i {
+  font-size: 1.4rem;
+}
+.progress .cover i:first-child {
+  margin-right: 0.5rem;
+}
+/* -----main-card----- */
+.card-cover {
+  height: 6rem;
+
+  width: 12rem;
+  border-radius: 1.5rem;
+  background-color: #6578eb;
+  margin-right: 2rem;
+}
+.main-card {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-card--1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-card--1 .main-card--infor h4 {
+  font-size: 1.8rem;
+  color: #c3c4cf;
+  margin-bottom: 1rem;
+}
+.main-card--1 .main-card--infor h5 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.main-card--2 .icon-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #3e3b50;
+  box-shadow: 0.3rem 0.2rem 2rem #e6e8fa;
+  border: none;
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+.main-card--2 .icon-secondary:hover {
+  background-color: #6578eb;
+  color: #fff;
+}
+
+/* -----challeange----- */
+.challange {
+  margin-top: 10rem;
+}
+.challange-2 {
+  opacity: 0.8;
+}
+.challange-3 {
+  opacity: 0.5;
+}
+.challange .row {
+  margin-bottom: 5rem;
+}
+.challange-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.challange .col-progress--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e8fa;
+  border-radius: 30%;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  margin: 0;
+}
+.challange-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.challange-content h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #3e3b50;
+}
+.challange-content h5 {
+  color: #c3c4cf;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+.circle-score-label {
+  height: 30px;
+  width: 30px;
+}
+.challange-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.challange-note .col-progress--icon {
+  background-color: #fff;
+  border: 0.1rem dashed #6578eb;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 40%;
+}
+.challange-note .col-progress--icon i {
+  color: #6578eb;
+  font-size: 1.4rem;
+}
+
+/* //992px/16 */
+@media only screen and (max-width: 62em) {
+}
+@media(min-width: 62em) {
+
+}
+
+/* //768px/16 */
+@media only screen and (max-width: 48em) {
+}
+@media(min-width: 62em) {
+
+}
+
+
+/* 576 */
+
+@media only screen and (max-width: 37.5em) {
+}
+@media(min-width: 36em) {
+
+}
+
+/* 375 */
+@media only screen and (max-width: 25em) {
+}
